@@ -20,13 +20,15 @@ class DataLoader {
         };
         this.loaded = false;
         this.loadPromise = null;
-
-        // Auto-detect base path based on current location
-        // If we're in a subdirectory (like work/), use '../data/', otherwise 'data/'
-        const path = window.location.pathname;
-        const isInSubdirectory = path.split('/').filter(p => p && p.includes('.html')).length > 0 &&
-                                 path.split('/').slice(0, -1).some(p => p && p !== '');
-        this.basePath = isInSubdirectory ? '../data/' : 'data/';
+        // Determine base path by inspecting how this script was loaded.
+        // If the script tag uses "../" in its src attribute, we mirror that depth
+        // when constructing the relative path to /data.
+        const loaderScript = document.currentScript;
+        let scriptSrc = loaderScript ? loaderScript.getAttribute('src') || '' : '';
+        scriptSrc = scriptSrc.split('?')[0]; // Remove cache-busting query params
+        const depthMatches = scriptSrc.match(/\.\.\//g);
+        const depth = depthMatches ? depthMatches.length : 0;
+        this.basePath = depth === 0 ? 'data/' : `${'../'.repeat(depth)}data/`;
     }
 
     async fetchJSON(path) {
