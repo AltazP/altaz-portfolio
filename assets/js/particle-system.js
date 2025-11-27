@@ -14,7 +14,7 @@ class ParticleSystem {
         this.mouse = { x: 0, y: 0 };
         this.animationId = null;
         this.isActive = false;
-        this.previousBlackHoleStrength = 110; // Track for redistribution
+        this.previousBlackHoleStrength = 200; // Track for redistribution
 
         // Mouse activity tracking
         this.lastMouseMove = Date.now();
@@ -22,20 +22,19 @@ class ParticleSystem {
         this.mouseIdleTimeout = 800; // ms of inactivity before releasing
         this.mouseActivityCheckInterval = null;
 
-        // Default configuration with responsive particle count
+        // Permanent Black Hole configuration - locked settings
         const isMobile = window.innerWidth <= 768;
         this.config = {
             particleCount: isMobile ? 200 : 300, // 200 on mobile, 300 on desktop
             connectionDistance: 150,
             mouseRadius: 150,
-            colorScheme: 'greys', // 'accent' or 'greys'
+            colorScheme: 'accent', // 'accent' or 'greys' - locked to accent
             colorStrength: 1.0, // 0.3 to 1.5
             interactionMode: 'attract', // 'attract', 'repel', or 'static'
             speed: 1.0,
-            mode: 'blackhole', // 'deepspace' or 'blackhole'
-            blackHoleStrength: 110, // radius for black hole mode
-            rememberMe: false, // Don't remember settings by default
-            ...this.loadPreferences()
+            mode: 'blackhole', // 'deepspace' or 'blackhole' - locked to blackhole
+            blackHoleStrength: 200, // radius for black hole mode - locked to 200
+            rememberMe: false // Settings are permanently locked
         };
 
         this.previousBlackHoleStrength = this.config.blackHoleStrength;
@@ -155,46 +154,37 @@ class ParticleSystem {
             // Remove particles
             this.particles = this.particles.slice(0, count);
         }
-
-        this.savePreferences();
     }
 
     updateMode(mode) {
         this.config.mode = mode;
         this.createParticles(); // Recreate particles for new mode
-        this.savePreferences();
     }
 
     updateBlackHoleStrength(strength) {
         this.previousBlackHoleStrength = this.config.blackHoleStrength;
         this.config.blackHoleStrength = strength;
-        this.savePreferences();
     }
 
     updateColorScheme(scheme) {
         this.config.colorScheme = scheme;
-        this.savePreferences();
     }
 
     updateColorStrength(strength) {
         this.config.colorStrength = strength;
-        this.savePreferences();
     }
 
     updateInteractionMode(mode) {
         this.config.interactionMode = mode;
-        this.savePreferences();
     }
 
     updateConnectionDistance(distance) {
         this.config.connectionDistance = distance;
-        this.savePreferences();
     }
 
     updateSpeed(speed) {
         this.config.speed = speed;
         this.particles.forEach(p => p.speedMultiplier = speed);
-        this.savePreferences();
     }
 
     getCurrentColors() {
@@ -475,68 +465,21 @@ class ParticleSystem {
     }
 
     reset() {
+        // Reset to permanent locked settings
         const isMobile = window.innerWidth <= 768;
         this.config = {
-            particleCount: isMobile ? 200 : 300, // 200 on mobile, 300 on desktop
+            particleCount: isMobile ? 200 : 300,
             connectionDistance: 150,
             mouseRadius: 150,
-            colorScheme: 'greys',
+            colorScheme: 'accent',
             colorStrength: 1.0,
             interactionMode: 'attract',
             speed: 1.0,
             mode: 'blackhole',
-            blackHoleStrength: 110
+            blackHoleStrength: 200,
+            rememberMe: false
         };
         this.createParticles();
-        this.savePreferences();
-    }
-
-    savePreferences() {
-        // Only save preferences if rememberMe is enabled
-        if (!this.config.rememberMe) {
-            return;
-        }
-
-        localStorage.setItem('particlePreferences', JSON.stringify({
-            particleCount: this.config.particleCount,
-            connectionDistance: this.config.connectionDistance,
-            colorScheme: this.config.colorScheme,
-            colorStrength: this.config.colorStrength,
-            interactionMode: this.config.interactionMode,
-            speed: this.config.speed,
-            mode: this.config.mode,
-            blackHoleStrength: this.config.blackHoleStrength,
-            rememberMe: this.config.rememberMe,
-            version: PARTICLE_SYSTEM_VERSION
-        }));
-    }
-
-    loadPreferences() {
-        // Only load preferences if rememberMe is enabled
-        const saved = localStorage.getItem('particlePreferences');
-        if (!saved) {
-            return {};
-        }
-
-        const preferences = JSON.parse(saved);
-
-        // Only load if rememberMe was enabled
-        if (!preferences.rememberMe) {
-            return { rememberMe: false };
-        }
-
-        return preferences;
-    }
-
-    updateRememberMe(enabled) {
-        this.config.rememberMe = enabled;
-        if (enabled) {
-            // Save current settings when turning on
-            this.savePreferences();
-        } else {
-            // Clear saved settings when turning off
-            localStorage.removeItem('particlePreferences');
-        }
     }
 }
 
@@ -1087,7 +1030,6 @@ function initParticleSystem() {
     if (!canvas) return null;
 
     const system = new ParticleSystem('particleCanvas');
-    const controls = new ParticleControlPanel(system);
 
     // Re-render when theme changes
     const originalToggleTheme = window.toggleTheme;
