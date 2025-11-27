@@ -98,6 +98,12 @@ function initPageTransitions() {
             }, delay);
         });
     });
+
+    // Ensure cached pages become visible again when navigated via back/forward
+    window.addEventListener('pageshow', () => {
+        document.body.classList.remove('page-transition-out');
+        document.body.classList.add('page-transition-in');
+    });
 }
 
 // ==========================================
