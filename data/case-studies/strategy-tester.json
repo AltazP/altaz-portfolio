@@ -1,0 +1,58 @@
+{
+  "id": "strategy-tester",
+  "sections": {
+    "overview": {
+      "heading": "Overview",
+      "content": "Stratify is a full-stack algorithmic trading platform that enables forex traders to backtest, paper trade, and execute live trading strategies with OANDA. Built with Next.js 15 and FastAPI, the platform provides real-time performance analytics, comprehensive risk management, and a plugin-based architecture for custom strategy development."
+    },
+    "coreTechnologies": {
+      "heading": "Core Technologies",
+      "keyPoints": [
+        "Next.js + Vercel",
+        "React + TypeScript",
+        "Python",
+        "FastAPI + Uvicorn",
+        "WebSocket",
+        "Oracle Cloud"
+      ]
+    },
+    "purpose": {
+      "heading": "Purpose",
+      "content": "I developed a comprehensive trading platform with a modern tech stack and optimized architecture. Built a Next.js 15 frontend with React 19 and TypeScript for the dashboard, paired with a FastAPI Python backend for trading logic. The frontend provides real-time visualizations using ApexCharts, while the backend handles strategy execution, OANDA API integration, and performance calculations. Implemented an async trading loop with throttled API calls and connection pooling to optimize resource usage. The system supports multiple concurrent paper trading sessions with independent position tracking, risk limits, and session management. Developed a backtesting engine that processes historical candle data, calculates key metrics (Sharpe ratio, max drawdown, win rate, profit factor), and generates interactive equity curves. Created an extensible strategy architecture with four built-in strategies (EMA, Donchian Channel, Mean Reversion, Alpha Fusion) and a plugin loader that enables developers to add custom strategies following a simple interface pattern."
+    },
+    "keyFeatures": {
+      "heading": "Key Features",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Backend API Development",
+          "description": "Built FastAPI backend with OANDA integration, implementing account management, order execution, position tracking, and transaction history. Created async trading loops with proper error handling and session management."
+        },
+        {
+          "number": 2,
+          "title": "Backtesting Engine",
+          "description": "Developed a historical data backtesting system that evaluates trading strategies on past market data. Implemented comprehensive performance metrics including Total Return, Max Drawdown, CAGR, Profit Factor, and Win Rate, with interactive equity curve visualizations using ApexCharts."
+        },
+        {
+          "number": 3,
+          "title": "Real-Time Trading",
+          "description": "Built paper and live trading systems with WebSocket-based real-time updates for positions, P&L, and account metrics. Implemented session management with start/stop/pause/resume controls, risk management limits, and automatic position recovery on backend restarts."
+        },
+        {
+          "number": 4,
+          "title": "Frontend Dashboard",
+          "description": "Created a Next.js dashboard with React, featuring real-time data visualization, interactive charts, and responsive UI components. Implemented WebSocket connections for live updates, account management modals, and a toggle-based live trading access control system."
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "title": "Contents",
+    "sections": [
+      { "id": "overview", "label": "Overview" },
+      { "id": "coreTechnologies", "label": "Core Technologies" },
+      { "id": "purpose", "label": "Purpose" },
+      { "id": "keyFeatures", "label": "Key Features" }
+    ]
+  }
+}

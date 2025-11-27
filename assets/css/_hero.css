@@ -1,0 +1,124 @@
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding-desktop);
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.hero-title {
+    font-size: clamp(48px, 8vw, 96px);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    line-height: 0.9;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+}
+
+.hero-subtitle {
+    font-size: clamp(18px, 2.5vw, 32px);
+    font-weight: var(--font-weight-regular);
+    color: var(--text-secondary);
+    margin-bottom: 48px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+}
+
+.hero-subtitle .mobile-break {
+    display: none;
+}
+
+.hero-description {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 48px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+}
+
+.scroll-arrow {
+    /* Positioning */
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%) translateY(30px);
+    z-index: 20;
+
+    /* Animation */
+    opacity: 0;
+    animation: fadeInUpCentered 0.8s ease-out 0.8s forwards;
+}
+
+.scroll-arrow svg .arrow-group {
+    transform: translateY(-40px);
+    animation: arrowSlideDown 0.8s ease-out 1.4s forwards, arrowBounce 2s infinite 2.4s;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    /* Positioning */
+    position: fixed;
+    bottom: 24px;
+    right: max(24px, calc((100vw - 1200px) / 2 - 80px));
+    z-index: 1000;
+
+    /* Visibility states */
+    opacity: 0;
+    transform: translateY(100px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Back to Projects Button */
+.back-to-projects {
+    /* Positioning */
+    position: fixed;
+    bottom: 84px; /* 48px (button height) + 24px (bottom gap) + 12px (gap between buttons) */
+    right: max(24px, calc((100vw - 1200px) / 2 - 80px));
+    z-index: 1000;
+
+    /* Visibility states */
+    opacity: 0;
+    transform: translateY(100px);
+    pointer-events: none;
+    text-decoration: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-projects.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+

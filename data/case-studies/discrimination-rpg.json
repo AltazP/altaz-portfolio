@@ -1,0 +1,55 @@
+{
+  "id": "discrimination-rpg",
+  "sections": {
+    "overview": {
+      "heading": "Overview",
+      "content": "Discrimination RPG is an interactive text-based role-playing game designed to immerse players in real-world social scenarios involving discrimination, bias, and difficult decision-making."
+    },
+    "coreTechnologies": {
+      "heading": "Core Technologies",
+      "keyPoints": [
+        "Python",
+        "Object-Oriented Programming",
+        "File I/O"
+      ]
+    },
+    "purpose": {
+      "heading": "Purpose",
+      "content": "The project was built to educate players on the subtle and overt forms of discrimination that individuals experience in everyday environments. By placing players directly into branching storylines, the game aims to build empathy, highlight systemic inequities, and spark meaningful reflection. It also served as a way to combine storytelling with software development, demonstrating how interactive media can explore important social issues."
+    },
+    "keyFeatures": {
+      "heading": "Key Features",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Branching Narrative Scenarios",
+          "description": "Players explore multiple storylines with different outcomes based on their decisions, allowing each playthrough to reveal new perspectives on discrimination and race-related challenges."
+        },
+        {
+          "number": 2,
+          "title": "Mental Health & Food Resource System",
+          "description": "A lightweight resource-management mechanic tracks mental health and food levels, affecting available choices and long-term outcomes, adding depth and realism to the gameplay experience."
+        },
+        {
+          "number": 3,
+          "title": "Explorable Locations",
+          "description": "Players can visit various in-game locations, each offering unique events, challenges, and conversations that shape the narrative and player progression."
+        },
+        {
+          "number": 4,
+          "title": "User Input Handling & State Management",
+          "description": "Robust input validation ensures smooth gameplay while internal state-tracking maintains player stats, choices, and scenario transitions."
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "title": "Contents",
+    "sections": [
+      { "id": "overview", "label": "Overview" },
+      { "id": "coreTechnologies", "label": "Core Technologies" },
+      { "id": "purpose", "label": "Purpose" },
+      { "id": "keyFeatures", "label": "Key Features" }
+    ]
+  }
+}

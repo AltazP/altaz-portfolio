@@ -1,0 +1,82 @@
+{
+  "id": "fbs-admin",
+  "sections": {
+    "overview": {
+      "heading": "Overview",
+      "content": "The FBS admin portal is a secure clinic management platform that automates billing, streamlines patient payments, handles digital consent forms, and keeps track of all patient data. It integrates with clinic EMRs and accounting systems, provides real-time revenue and collections dashboards, and offers a mobile-friendly patient portal for payments and card updates, all designed to reduce administrative workload and improve revenue."
+    },
+    "coreTechnologies": {
+      "heading": "Core Technologies",
+      "keyPoints": [
+        "Next.js",
+        "React + TypeScript",
+        "Express.js",
+        "Supabase",
+        "Postman"
+      ]
+    },
+    "purpose": {
+      "heading": "Purpose",
+      "content": "The FBS admin portal was built to directly help fertility clinics across North America, by improving their revenue whilst reducing manual work needed by employees. Many clinics lose revenue due to patients missing payments, whilst the clinics have no choice but to keep the patients specimen in storage due to legality. FBS addresses this issue by automating subscription-based payments and centralizing patient information, including payment history and communication logs. We also provide a streamlined way to send disposition forms to patients, helping clinics avoid the high costs of storing unpaid or abandoned specimens, which is how a lot of fertility clinics lose money. Also, the portal offers detailed insights into cryostorage, revenue trends, and operational metrics, so clinics can make more informed business decisions."
+    },
+    "keyFeatures": {
+      "heading": "Key Features",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Automated Billing & Payment Processing",
+          "description": "Automates subscription-based payments to reduce missed payments and revenue loss. Streamlines patient payment processing with a mobile-friendly patient portal that allows patients to update payment methods and manage their accounts, reducing administrative burden on clinic staff."
+        },
+        {
+          "number": 2,
+          "title": "Patient Data Management & EMR Integration",
+          "description": "Centralizes all patient information including payment history and communication logs in one secure platform. Integrates seamlessly with clinic EMRs and accounting systems to provide a unified view of patient data and financial information."
+        },
+        {
+          "number": 3,
+          "title": "Digital Consent Forms & Disposition Management",
+          "description": "Provides a streamlined way to send and manage digital disposition forms, helping clinics avoid high storage costs for unpaid or abandoned specimens. This feature directly addresses revenue loss by enabling clinics to efficiently handle specimen disposition while maintaining legal compliance."
+        },
+        {
+          "number": 4,
+          "title": "Revenue Analytics & Operational Dashboards",
+          "description": "Offers real-time revenue and collections dashboards with detailed insights into cryostorage, revenue trends, and operational metrics. Enables clinics to make data-driven business decisions and identify opportunities to improve revenue and operational efficiency."
+        },
+        {
+          "number": 5,
+          "title": "Automated Testing & Security Infrastructure",
+          "description": "Comprehensive automated testing suite using Postman integrated with GitHub Actions CI/CD pipeline ensures continuous validation of all critical endpoints and workflows on every deployment."
+        }
+      ]
+    },
+    "results": {
+      "heading": "Results & Impact",
+      "intro": "The FBS Admin Portal is now actively deployed across multiple fertility clinics, delivering measurable improvements in operational efficiency and revenue management. Clinics using the platform have processed over $1M in transactions and automated more than 10,000 invoices. The platform maintains 100% uptime, ensuring reliable access to critical billing and patient management functions. Real-world results show clinics achieving more on-time payments, higher storage revenue, and increased disposition forms signed, directly addressing the revenue loss challenges that fertility clinics face.",
+      "metricsType": "simple",
+      "metrics": [
+        {
+          "value": "250+",
+          "label": "Admin hours saved/clinic/month"
+        },
+        {
+          "value": "68%",
+          "label": "Higher storage revenue"
+        },
+        {
+          "value": "2.7x",
+          "label": "More on-time payments"
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "title": "Contents",
+    "sections": [
+      { "id": "overview", "label": "Overview" },
+      { "id": "coreTechnologies", "label": "Core Technologies" },
+      { "id": "purpose", "label": "Purpose" },
+      { "id": "keyFeatures", "label": "Key Features" },
+      { "id": "results", "label": "Results & Impact" }
+    ]
+  }
+}

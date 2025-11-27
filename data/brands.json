@@ -1,0 +1,34 @@
+{
+  "brands": [
+    {
+      "name": "MFC",
+      "lightLogo": "assets/logos/mfc-logo-main-mono.svg",
+      "darkLogo": "assets/logos/mfc-logo-main-mono.svg",
+      "alt": "MFC"
+    },
+    {
+      "name": "Ismaili canada",
+      "lightLogo": "assets/logos/ismaili-dark.svg",
+      "darkLogo": "assets/logos/ismaili-dark.svg",
+      "alt": "Ismaili Canada"
+    },
+    {
+      "name": "MaRS",
+      "lightLogo": "assets/logos/mars-logo.svg",
+      "darkLogo": "assets/logos/mars-logo.svg",
+      "alt": "MaRS"
+    },
+    {
+      "name": "FBS",
+      "lightLogo": "assets/logos/fbs-row-final.svg",
+      "darkLogo": "assets/logos/fbs-row-final.svg",
+      "alt": "FBS"
+    },
+    {
+      "name": "Fidelity",
+      "lightLogo": "assets/logos/fidelity-row-final.svg",
+      "darkLogo": "assets/logos/fidelity-row-final.svg",
+      "alt": "Fidelity"
+    }
+  ]
+}

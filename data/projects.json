@@ -1,0 +1,195 @@
+{
+  "projects": [
+    {
+      "id": "strategy-tester",
+      "title": "Strategy Tester",
+      "subtitle": "Algorithmic Strategy Testing & Execution Platform",
+      "description": "Building a comprehensive algorithmic trading platform for backtesting, paper trading, and live execution of forex strategies.",
+      "url": "strategy-tester.html",
+      "ariaLabel": "View Design System Case Study",
+      "category": "Design Systems",
+      "year": 2024,
+      "tags": ["UX", "Design Systems", "Accessibility", "Enterprise Software", "Design Tokens", "Component Library"],
+      "seo": {
+        "metaDescription": "Unifying enterprise product experiences through a comprehensive design system with accessibility as a foundational standard.",
+        "ogImage": "https://altazp.github.io/altaz-portfolio/assets/images/preview/home-preview.png"
+      },
+      "metrics": {
+        "role": "Developer",
+        "timeline": "Ongoing",
+        "team": "2 UX, 2 Devs"
+      },
+      "featuredImages": [
+        { "filename": "design-system-featured-1", "alt": "Equity Curve and Performance Metrics Dashboard" },
+        { "filename": "design-system-featured-2", "alt": "Backtesting Interface" },
+        { "filename": "design-system-featured-3", "alt": "All Metrics Dashboard" },
+        { "filename": "design-system-featured-4", "alt": "Trading Sessions Management" },
+        { "filename": "design-system-featured-5", "alt": "Paper Trading Dashboard" },
+        { "filename": "design-system-featured-6", "alt": "Trade History Table" }
+      ],
+      "carouselMetadata": [
+        {
+          "label1": "Charts",
+          "value1": "Interactive charts that visualize performance metrics and trading sessions"
+        },
+        {
+          "label1": "Advanced Backtesting",
+          "value1": "Multiple timeframes, custom strategies, and risk management"
+        },
+        {
+          "label1": "Real-time Execution",
+          "value1": "Run multiple trading sessions on different accounts simultaneously"
+        },
+        {
+          "label1": "Account Management",
+          "value1": "Live account data, position management, and performance tracking"
+        },
+        {
+          "label1": "Advanced Statistics",
+          "value1": "Full dashboard of statistical metrics for performance analysis"
+        },
+        {
+          "label1": "Trade History",
+          "value1": "Detailed trade history with entry, exit, and P&L details"
+        }
+      ]
+    },
+    {
+      "id": "fbs-admin",
+      "title": "FBS Admin Portal",
+      "subtitle": "Building foundational UX patterns for scalable growth",
+      "description": "Full-stack application that automates cryostorage billing, digital consent workflows, and revenue analytics for fertility clinics across North America.",
+      "url": "fbs-admin.html",
+      "ariaLabel": "View FBS Admin Portal Case Study",
+      "category": "Product Design",
+      "year": 2024,
+      "tags": ["UX", "Product Design", "Information Architecture", "SaaS", "Hybrid Deployment"],
+      "seo": {
+        "metaDescription": "Leading the end-to-end design of a hybrid product ecosystem from concept to launch, establishing foundational UX patterns for scalable growth.",
+        "ogImage": "https://altazp.github.io/altaz-portfolio/assets/images/preview/home-preview.png"
+      },
+      "metrics": {
+        "role": "UX Director / Designer",
+        "timeline": "36 months",
+        "team": "16 UX, 20 Dev, 8 PO"
+      },
+      "featuredImages": [
+        { "filename": "product-feature-1", "alt": "FBS Admin Portal overview" },
+        { "filename": "product-feature-2", "alt": "Component system and patterns" },
+        { "filename": "product-feature-3", "alt": "AI integration strategy" },
+        { "filename": "product-feature-4", "alt": "Progressive disclosure and modalities" }
+      ],
+      "carouselMetadata": [
+        {
+          "label1": "Activity Log",
+          "value1": "Keep track of each patient's communications and action items"
+        },
+        {
+          "label1": "Lab Metrics",
+          "value1": "Stay on top of storage trends by tracking specimen counts, freeze types, and more"
+        },
+        {
+          "label1": "Financial Insights",
+          "value1": "real-time analytics on monthly revenue, overdue invoices, and projected growth"
+        },
+        {
+          "label1": "Automated Billing",
+          "value1": "Automatic invoice generation, payment reminders, and consent form workflows"
+        }
+      ]
+    },
+    {
+      "id": "nba-sim",
+      "title": "NBA Simulator",
+      "subtitle": "Making complex automation feel intuitive and trustworthy",
+      "description": "Python matchup simulator that scrapes real-time player stats, sanitizes messy user input, and predicts a winner between custom lineups.",
+      "url": "nba-sim.html",
+      "ariaLabel": "View AI Product Design Strategy Case Study",
+      "category": "AI/ML Design",
+      "year": 2024,
+      "tags": ["AI/ML", "Product Design", "UX Strategy", "Trust Design", "Automation"],
+      "seo": {
+        "metaDescription": "Designing intelligent user experiences that seamlessly integrate AI capabilities into existing workflows, making complex automation feel intuitive and trustworthy.",
+        "ogImage": "https://altazp.github.io/altaz-portfolio/assets/images/preview/home-preview.png"
+      },
+      "metrics": {
+        "role": "UX Director / Designer",
+        "timeline": "3 months",
+        "team": "3 UX, 4 Dev, 3 PO"
+      },
+      "featuredImages": [
+        { "filename": "nba-sim-1", "alt": "NBA Sim overview" },
+        { "filename": "nba-sim-2", "alt": "NBA Sim features" },
+        { "filename": "nba-sim-3", "alt": "NBA Sim interface" },
+        { "filename": "nba-sim-4", "alt": "NBA Sim analytics" }
+      ],
+      "carouselMetadata": [
+        {
+          "label1": "Predict",
+          "value1": "Simulate matchups between any two custom NBA lineups"
+        },
+        {
+          "label1": "Current Data",
+          "value1": "Live scraped data ensures accuracy and relevance"
+        },
+        {
+          "label1": "Error Handling",
+          "value1": "Robust error handling for messy user input"
+        },
+        {
+          "label1": "Final Scores",
+          "value1": "Predict the final score of your custom NBA game"
+        }
+      ]
+    },
+    {
+      "id": "discrimination-rpg",
+      "title": "Discrimination RPG",
+      "subtitle": "Interactive text-based role-playing game exploring social issues",
+      "description": "An interactive text-based role-playing game designed to immerse players in real-world social scenarios involving discrimination, bias, and difficult decision-making.",
+      "url": "discrimination-rpg.html",
+      "ariaLabel": "View Discrimination RPG Case Study",
+      "category": "Game Development",
+      "year": 2024,
+      "tags": ["Python", "Game Development", "Interactive Fiction", "Social Impact"],
+      "seo": {
+        "metaDescription": "An interactive text-based role-playing game designed to immerse players in real-world social scenarios involving discrimination, bias, and difficult decision-making.",
+        "ogImage": "https://altazp.github.io/altaz-portfolio/assets/images/preview/home-preview.png"
+      },
+      "metrics": {
+        "role": "Developer",
+        "timeline": "Ongoing",
+        "team": "Solo"
+      },
+      "featuredImages": [
+        { "filename": "discrimination-rpg-1", "alt": "Discrimination RPG main hub showing player choices" },
+        { "filename": "discrimination-rpg-2", "alt": "Dialogue scene with empathy-driven branching responses" },
+        { "filename": "discrimination-rpg-3", "alt": "In-game letter detailing story context and player briefing" },
+        { "filename": "discrimination-rpg-4", "alt": "Market encounter showing option menu and stats banner" },
+        { "filename": "discrimination-rpg-5", "alt": "Outcome recap highlighting player decisions and reflections" }
+      ],
+      "carouselMetadata": [
+        {
+          "label1": "Different Scenarios",
+          "value1": "Explore many different areas, conversations, and decisions."
+        },
+        {
+          "label1": "Player Navigation",
+          "value1": "Move across a terminal map to get to different areas of the game."
+        },
+        {
+          "label1": "Character Choices",
+          "value1": "Choose between different traits to see how they affect the story."
+        },
+        {
+          "label1": "Food and Mental Health",
+          "value1": "Take care of your player to ensure they can continue the story."
+        },
+        {
+          "label1": "Final Score",
+          "value1": "Try to get the best mental health score possible."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "skillCategories": [
+    {
+      "category": "Languages",
+      "title": "Languages",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "HTML/CSS",
+        "C",
+        "C++",
+        "SQL",
+        "Racket",
+        "Bash"
+      ]
+    },
+    {
+      "category": "Technologies",
+      "title": "Technologies",
+      "skills": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express",
+        "FastAPI",
+        "WebSocket",
+        "AWS",
+        "Oracle Cloud",
+        "Supabase",
+        "BeautifulSoup (BS4)",
+        "Pandas",
+        "NumPy",
+        "Deno"
+        ]
+    },
+    {
+      "category": "Developer Tools",
+      "title": "Developer Tools",
+      "skills": [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Postman",
+        "Sentry",
+        "Vercel",
+        "VS Code",
+        "Linear / Jira",
+        "Notion"
+      ]
+    }
+  ]
+}

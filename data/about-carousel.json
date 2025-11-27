@@ -1,0 +1,32 @@
+{
+  "carouselCards": [
+    {
+      "id": "about-design",
+      "dataCard": "about-design",
+      "title": "Hey it's me! &nbsp;&nbsp;👋",
+      "description": "The water fight started shortly after",
+      "backgroundClass": "about-design"
+    },
+    {
+      "id": "about-background",
+      "dataCard": "about-background",
+      "title": "Hey it's me again! &nbsp;&nbsp;😂",
+      "description": "I can't think of a better way to unwind and get rid of distractions than getting some shots up.",
+      "backgroundClass": "about-background"
+    },
+    {
+      "id": "about-creative",
+      "dataCard": "about-creative",
+      "title": "My cats &nbsp;&nbsp;🐱",
+      "description": "Meet Storm and Cloud, always ready to sprint around, nap, and keep me company.",
+      "backgroundClass": "about-creative"
+    },
+    {
+      "id": "about-personal",
+      "dataCard": "about-personal",
+      "title": "Something I captured &nbsp;&nbsp;📸",
+      "description": "One of my favorite captures to date.",
+      "backgroundClass": "about-personal"
+    }
+  ]
+}

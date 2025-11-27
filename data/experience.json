@@ -1,0 +1,83 @@
+{
+  "experience": [
+    {
+      "company": "Fidelity Canada",
+      "location": "Toronto, ON",
+      "title": "Investly Software Developer",
+      "dates": "Scheduled:  01/2026 - 04/2026",
+      "startDate": "2025-01",
+      "endDate": null,
+      "description": [
+        "Will contribute to Investly app development across mobile, frontend, and backend",
+        "Will support data pipeline development, automated testing, and software design"
+      ],
+      "featured": true
+    },
+    {
+      "company": "Fidelity Canada",
+      "location": "Toronto, ON",
+      "title": "Automation Developer",
+      "dates": "01/2025 - 04/2025",
+      "startDate": "2025-01",
+      "endDate": "2025-04",
+      "description": [
+        "Created a Python pipeline to load automated test results into Snowflake and auto-refresh Power BI dashboards, cutting manual reporting by 90% and improving defect detection speed by 40%",
+        "Implemented a Python integration framework for Katalon Studio, bypassing Java-only limitations and increasing automation coverage by 30% while enabling faster development of complex test cases",
+        "Developed automated test scripts integrating Deque axe-core to continuously validate web components for accessibility standards, detecting 100+ violations across Fidelity Canada webpages",
+        "Engineered GitHub Actions pipelines to run Katalon test suites on cron and push/PR triggers, replacing legacy Jenkins jobs across the QA team and increasing pipeline reliability by 40%",
+        "Delivered internal workshops for 10+ manual testers on Git, GitHub workflows, and automation practices, supporting the team's transition from manual testing to CI-driven automation"
+      ],
+      "featured": true
+    },
+    {
+      "company": "Fertility Billing Solution",
+      "location": "Toronto, ON",
+      "title": "Software Engineer",
+      "dates": "05/2024 - 08/2024",
+      "startDate": "2024-05",
+      "endDate": "2024-08",
+      "description": [
+        "Reduced invoice creation and data retrieval time by 300%, by developing a React and TypeScript-based app with Supabase, enabling clinics to retrieve patient data and take actions from a centralized place",
+        "Increased the number of disposition forms signed by 6x, resulting in a $3000/month increase in profits, by simplifying the sending and handling of forms using Dropbox and Dropbox Sign APIs and webhooks",
+        "Boosted a clinic’s profits by $15,000 per month, by automating payments and sending invoices via email and post, utilizing Stripe and Postgrid APIs with Express",
+        "Implemented an AI Chatbot to automate customer service responses, reducing customer calls by 45%",
+        "Enhanced system reliability by 85% through creating automated Postman tests integrated with a CI/CD pipeline using GitHub Actions, ensuring key features remained functional on every push",
+        "Strengthened security by implementing Row-Level Security and JWT verification using Supabase Auth and custom SQL policies, resulting in a 100% reduction in unauthorized data access incidents"
+      ],
+      "featured": true
+    },
+    {
+      "company": "Saza Accounting Services",
+      "location": "Toronto, ON",
+      "title": "Computer Technician",
+      "dates": "01/2022 - 04/2023",
+      "startDate": "2022-01",
+      "endDate": "2023-05",
+      "description": [
+        "Developed a Python script using Pandas to automate parsing and sorting of client expense data, reducing manual sorting time by 70% and enhancing data accuracy",
+        "Delivered support and training on software, hardware, and network troubleshooting to employees",
+        "Handled customer phone calls and inquiries, and maintained relations with 50+ clients, which include both individuals and other businesses",
+        "Use of effective troubleshooting techniques and predictive measures helped reduce downtime by 34%"
+      ],
+      "featured": true
+    },
+    {
+      "company": "The Ismaili Canada",
+      "location": "Toronto, ON",
+      "title": "Camp Counsellor",
+      "dates": "08/2025, 08/2024",
+      "startDate": "2025-06",
+      "endDate": "2025-08",
+      "featured": false
+    },
+    {
+      "company": "Aga Khan Foundation",
+      "location": "Toronto, ON",
+      "title": "Youth Program Coordinator",
+      "dates": "07/2022 - 07/2023",
+      "startDate": "2022-07",
+      "endDate": "2023-07",
+      "featured": false
+    }
+  ]
+}

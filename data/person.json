@@ -1,0 +1,32 @@
+{
+  "name": "Altaz Punja",
+  "jobTitle": "Software Engineer",
+  "description": "Computer Science student at the University of Waterloo with a passion for building scalable software and solving complex problems.",
+  "email": "altazp@gmail.com",
+  "phone": "416.786.3368",
+  "location": {
+    "address": "109 Hawkshead Crescent",
+    "city": "Toronto",
+    "state": "ON",
+    "zip": "M1W2Z4",
+    "country": "Canada"
+  },
+  "website": "https://altazp.github.io/altaz-portfolio/",
+  "image": "https://altazp.github.io/altaz-portfolio/assets/images/about-me-1.png",
+  "socialLinks": {
+    "linkedin": "https://www.linkedin.com/in/altazpunja/",
+    "github": "https://github.com/AltazP",
+    "instagram": "https://www.instagram.com/altazp/"
+  },
+  "skills": [
+    "Full-Stack Development",
+    "API Design",
+    "Automation",
+    "Data Science",
+    "Python",
+    "JavaScript",
+    "React",
+    "TypeScript"
+  ],
+  "summary": "Computer science student at the University of Waterloo with a passion for building and problem solving. I enjoy designing clean, scalable software that people will use, from building reliable backend services and APIs to intuitive front-end interfaces. I love the challenge of turning ideas into polished, high-quality products and finding ways to improve them."
+}

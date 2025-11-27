@@ -1,0 +1,50 @@
+{
+  "id": "nba-sim",
+  "sections": {
+    "overview": {
+      "heading": "Overview",
+      "content": "This project was made to create a hypothetical matchup of two teams of any five current NBA players. Based on the selected players advanced statistics, such as player efficiency and defensive rating, an algorithm calculates the final score and winner. All data is scraped from current player statistics using Beautiful Soup, ensuring accurate and up-to-date final score predictions."
+    },
+    "coreTechnologies": {
+      "heading": "Core Technologies",
+      "keyPoints": [
+        "Python",
+        "Beautiful Soup",
+        "Pandas"
+      ]
+    },
+    "purpose": {
+      "heading": "Purpose",
+      "content": "My friends and I would often do mock drafts with current NBA players, where we would all try to create the best teams. This led to lots of debate on whose team is actually the best, and which would win in a game. After endless arguments I decided to create this simulator, so we could all put our teams in the program, and decide once and for all which team is better and who would be the best NBA General Manager."
+    },
+    "keyFeatures": {
+      "heading": "Key Features",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Live Player Statistics",
+          "description": "All player statistics are scraped from <a href=\"https://basketball.realgm.com/\" target=\"_blank\" rel=\"noopener noreferrer\">basketball.realgm.com</a> using Beautiful Soup, ensuring accurate and up-to-date final score predictions."
+        },
+        {
+          "number": 2,
+          "title": "Final Score Algorithm",
+          "description": "Developed design principles for AI transparency, including explainability patterns and confidence visualization methods."
+        },
+        {
+          "number": 3,
+          "title": "Robust Error Handling & Input Validation",
+          "description": "Implemented comprehensive error handling and input validation to gracefully manage edge cases, including misspelled player names, invalid team configurations, and unexpected user input, preventing crashes and maintaining a smooth user experience."
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "title": "Contents",
+    "sections": [
+      { "id": "overview", "label": "Overview" },
+      { "id": "coreTechnologies", "label": "Core Technologies" },
+      { "id": "purpose", "label": "Purpose" },
+      { "id": "keyFeatures", "label": "Key Features" }
+    ]
+  }
+}

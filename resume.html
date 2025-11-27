@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Altaz Punja</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://altazp.github.io/altaz-portfolio/resume.html">
+    <meta property="og:title" content="Resume - Altaz Punja">
+    <meta property="og:description" content="Software Engineering student with experience in full-stack development, automation, and data pipelines.">
+    <meta property="og:image" content="https://altazp.github.io/altaz-portfolio/assets/images/preview/resume-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://altazp.github.io/altaz-portfolio/resume.html">
+    <meta property="twitter:title" content="Resume - Altaz Punja">
+    <meta property="twitter:description" content="Software Engineering student with experience in full-stack development, automation, and data pipelines.">
+    <meta property="twitter:image" content="https://altazp.github.io/altaz-portfolio/assets/images/preview/resume-preview.png">
+
+    <link rel="icon" href="assets/icons/logo-ap-orange.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="assets/icons/logo-ap-orange.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/icons/logo-ap-orange.svg?v=1" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css?v=1761930258">
+    <style>
+        /* Resume-specific CSS variables */
+        :root {
+            --accent-color: #15B5FF;
+            --primary-color: #0f0f0f;
+            --secondary-color: #525252;
+            --tertiary-color: #737373;
+            --divider-color: #e5e5e5;
+        }
+
+        body[data-theme="dark"] {
+            --accent-color: #ea580c;
+            --primary-color: #ffffff;
+            --secondary-color: #e0e0e0;
+            --tertiary-color: #a3a3a3;
+            --divider-color: #404040;
+        }
+
+        /* Critical inline styles to prevent navigation flash on first load
+           These must stay inline to override external CSS before it loads */
+        .nav {
+            background: rgba(250, 250, 250, 0.1) !important;
+        }
+        body[data-theme="dark"] .nav {
+            background: rgba(23, 23, 23, 0.1) !important;
+        }
+
+        /* Resume-specific styles */
+        .header {
+            margin-bottom: 0;
+        }
+
+        .header .subtitle {
+            font-size: clamp(18px, 2.5vw, 32px);
+            color: var(--text-secondary);
+            font-weight: var(--font-weight-regular);
+        }
+
+        .header .description {
+            word-spacing: 0.5em;
+        }
+
+        .header .description .interactive-text {
+            color: var(--accent-color);
+        }
+
+        /* Ensure default body font for description paragraphs (not subtitle) */
+        .header p:not(.subtitle) {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .resume-section {
+            padding: 48px 0;
+        }
+
+        .resume-section:first-of-type {
+            padding-top: 28px;
+        }
+
+        .resume-section-title {
+            font-size: 32px;
+            font-weight: 400;
+            color: var(--primary-color);
+            margin-bottom: 48px;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+
+        .resume-summary {
+            padding: 0;
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--secondary-color);
+        }
+
+        .experience-timeline {
+            position: relative;
+        }
+
+        .experience-item {
+            padding: 0;
+            margin-bottom: 24px;
+        }
+
+        .experience-item.experience-detailed {
+            margin-bottom: 32px;
+        }
+
+        .experience-header {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 32px;
+            margin-bottom: 16px;
+        }
+
+        .experience-dates {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 180px;
+            flex-shrink: 0;
+        }
+
+        .experience-company {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--secondary-color);
+            width: 200px;
+            flex-shrink: 0;
+        }
+
+        .experience-location {
+            font-size: 16px;
+            color: var(--secondary-color);
+            width: 150px;
+            flex-shrink: 0;
+        }
+
+        .experience-title {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--accent-color);
+            margin-bottom: 0;
+            display: inline;
+            flex: 1;
+        }
+
+        .experience-description {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--secondary-color);
+            margin-top: 16px;
+        }
+
+        .experience-description-list {
+            margin: 16px 0 0 20px;
+            padding: 0;
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--secondary-color);
+            list-style-type: disc;
+        }
+
+        .experience-description-list li {
+            margin-bottom: 8px;
+        }
+
+        .experience-compact-grid {
+            margin-top: 64px;
+        }
+
+        .experience-compact {
+            padding: 0;
+            margin-bottom: 16px;
+        }
+
+        .experience-compact .experience-header {
+            margin-bottom: 0;
+        }
+
+        .experience-compact .experience-description,
+        .experience-compact .experience-description-list {
+            display: none;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+        .skill-category {
+            padding: 0;
+        }
+
+        .skill-category-title {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--primary-color);
+            margin-bottom: 24px;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+
+        .skill-list {
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--secondary-color);
+        }
+
+        .skill-level {
+            color: var(--accent-color);
+            font-weight: 600;
+            display: block;
+            margin-top: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            /* Ensure mobile body font for description paragraphs (not subtitle) */
+            .header p:not(.subtitle) {
+                font-size: 12px;
+            }
+
+            .header {
+                margin-bottom: 0;
+            }
+
+            .resume-section:first-of-type {
+                padding-top: 20px;
+            }
+
+            .resume-section-title {
+                font-size: 24px;
+            }
+
+            .resume-summary {
+                padding: 0;
+                font-size: 16px;
+            }
+
+            .experience-item {
+                padding: 0;
+            }
+
+            .experience-compact {
+                padding: 0;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+
+            .experience-compact-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Apply theme immediately to prevent flash
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.body.removeAttribute('data-theme');
+            } else {
+                document.body.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-container">
+                    <div class="logo-svg"></div>
+                    <span class="logo-text">Altaz Punja</span>
+                </div>
+            </a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html"><span class="link-text">Home</span></a></li>
+                    <li><a href="index.html#projects"><span class="link-text">Work</span></a></li>
+                    <li><a href="index.html#about"><span class="link-text">About</span></a></li>
+                    <li><a href="index.html#contact"><span class="link-text">Contact</span></a></li>
+                    <li><a href="resume.html" class="active"><span class="link-text">Resume</span></a></li>
+                </ul>
+                <button class="nav-theme-toggle" onclick="toggleTheme()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.98038 2.73135C9.79117 2.67374 9.59078 2.67397 9.40415 2.72944C7.79045 3.18158 6.32264 4.04719 5.14599 5.24078C3.96517 6.4386 3.11882 7.92491 2.69124 9.55165C2.26365 11.1784 2.26977 12.8888 2.70898 14.5124C3.14819 16.136 4.00515 17.6163 5.19451 18.8056C6.38386 19.995 7.86409 20.8519 9.48773 21.2911C11.1114 21.7303 12.8218 21.7364 14.4485 21.3088C16.0752 20.8812 17.5615 20.0348 18.7593 18.854C19.9525 17.6778 20.8179 16.2106 21.2702 14.5976C21.324 14.4177 21.3265 14.2247 21.275 14.041C21.1538 13.6089 20.7597 13.3102 20.311 13.3106C20.2099 13.3107 20.1116 13.326 20.0186 13.3546C18.7246 13.7093 17.3598 13.7164 16.0619 13.3751C14.7554 13.0314 13.5636 12.347 12.6083 11.3918C11.6531 10.4365 10.9686 9.24468 10.625 7.93818C10.2834 6.63949 10.2908 5.27379 10.6461 3.9791C10.6732 3.89024 10.6881 3.79655 10.6893 3.70018C10.6947 3.25564 10.4057 2.86084 9.98038 2.73135ZM6.57028 6.64485C7.11058 6.09677 7.72838 5.63598 8.40126 5.27566C8.32141 6.33717 8.41781 7.40898 8.69079 8.44689C9.12451 10.096 9.98839 11.6003 11.1941 12.806C12.3998 14.0117 13.9041 14.8756 15.5532 15.3093C16.5911 15.5822 17.6629 15.6786 18.7244 15.5988C18.3641 16.2717 17.9033 16.8894 17.3553 17.4297C16.4063 18.3652 15.2288 19.0357 13.9401 19.3745C12.6513 19.7133 11.2963 19.7084 10.01 19.3605C8.72365 19.0125 7.55096 18.3336 6.60871 17.3914C5.66647 16.4492 4.98755 15.2765 4.63959 13.9902C4.29163 12.7039 4.28679 11.3488 4.62553 10.0601C4.96428 8.77132 5.63479 7.59381 6.57028 6.64485Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Toggle Button (Outside nav for proper z-index layering) -->
+    <button class="nav-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+    </button>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <nav class="mobile-nav">
+                <a href="index.html" onclick="toggleMobileMenu(event)"><span class="mobile-link-text">Home</span></a>
+                <a href="index.html#projects" onclick="toggleMobileMenu(event)"><span class="mobile-link-text">Work</span></a>
+                <a href="index.html#about" onclick="toggleMobileMenu(event)"><span class="mobile-link-text">About</span></a>
+                <a href="index.html#contact" onclick="toggleMobileMenu(event)"><span class="mobile-link-text">Contact</span></a>
+                <a href="resume.html" onclick="toggleMobileMenu(event)" class="active"><span class="mobile-link-text">Resume</span></a>
+            </nav>
+            <button class="mobile-theme-toggle" onclick="toggleTheme()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.98038 2.73135C9.79117 2.67374 9.59078 2.67397 9.40415 2.72944C7.79045 3.18158 6.32264 4.04719 5.14599 5.24078C3.96517 6.4386 3.11882 7.92491 2.69124 9.55165C2.26365 11.1784 2.26977 12.8888 2.70898 14.5124C3.14819 16.136 4.00515 17.6163 5.19451 18.8056C6.38386 19.995 7.86409 20.8519 9.48773 21.2911C11.1114 21.7303 12.8218 21.7364 14.4485 21.3088C16.0752 20.8812 17.5615 20.0348 18.7593 18.854C19.9525 17.6778 20.8179 16.2106 21.2702 14.5976C21.324 14.4177 21.3265 14.2247 21.275 14.041C21.1538 13.6089 20.7597 13.3102 20.311 13.3106C20.2099 13.3107 20.1116 13.326 20.0186 13.3546C18.7246 13.7093 17.3598 13.7164 16.0619 13.3751C14.7554 13.0314 13.5636 12.347 12.6083 11.3918C11.6531 10.4365 10.9686 9.24468 10.625 7.93818C10.2834 6.63949 10.2908 5.27379 10.6461 3.9791C10.6732 3.89024 10.6881 3.79655 10.6893 3.70018C10.6947 3.25564 10.4057 2.86084 9.98038 2.73135ZM6.57028 6.64485C7.11058 6.09677 7.72838 5.63598 8.40126 5.27566C8.32141 6.33717 8.41781 7.40898 8.69079 8.44689C9.12451 10.096 9.98839 11.6003 11.1941 12.806C12.3998 14.0117 13.9041 14.8756 15.5532 15.3093C16.5911 15.5822 17.6629 15.6786 18.7244 15.5988C18.3641 16.2717 17.9033 16.8894 17.3553 17.4297C16.4063 18.3652 15.2288 19.0357 13.9401 19.3745C12.6513 19.7133 11.2963 19.7084 10.01 19.3605C8.72365 19.0125 7.55096 18.3336 6.60871 17.3914C5.66647 16.4492 4.98755 15.2765 4.63959 13.9902C4.29163 12.7039 4.28679 11.3488 4.62553 10.0601C4.96428 8.77132 5.63479 7.59381 6.57028 6.64485Z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Resume Header -->
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Resume</h1>
+            <p class="subtitle">Altaz Punja</p>
+            <p class="description">
+                109 Hawkshead Crescent, Toronto, ON M1W2Z4 • 416.786.3368 • <a href="mailto:apunja@uwaterloo.ca" class="external-link neutral-link">apunja@uwaterloo.ca</a><br>
+                <a href="index.html" class="accent-link">Portfolio</a> •
+                <a href="https://www.linkedin.com/in/altazpunja/" class="external-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a> •
+                <a href="https://github.com/AltazP" class="external-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </p>
+        </header>
+    </div>
+
+    <!-- Curriculum Vitae Section -->
+    <section class="resume-section">
+        <div class="container">
+            <h2 class="resume-section-title">Summary</h2>
+            <div class="resume-summary">
+                Software engineer with a strong foundation in systems, algorithms, and high-performance engineering. I build reliable, scalable software across the stack, ranging from distributed backends and automated pipelines to real-time trading systems and production-grade web applications. My experience spans enterprise-level development, cloud deployment, CI/CD automation, and data-driven problem solving. Known for my adaptability and relentless work ethic, I thrive in fast-moving environments where precision, efficiency, and deep technical thinking are essential.
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="resume-section">
+        <div class="container">
+            <h2 class="resume-section-title">Experience</h2>
+            <div class="experience-timeline">
+                <!-- Experience items are dynamically generated from data/experience.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="resume-section">
+        <div class="container">
+            <h2 class="resume-section-title">Skills</h2>
+            <div class="skills-grid">
+                <!-- Skill categories are dynamically generated from data/skills.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Spacing -->
+    <div class="bottom-spacing"></div>
+
+    <!-- Back to Top Button -->
+    <button class="btn-arrow btn-arrow-md btn-arrow-filled back-to-top" onclick="scrollToTop()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 18L12 6M8 10L12 6L16 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+    <!-- Markdown parser required for resume bullet rendering -->
+    <script src="assets/js/marked.min.js"></script>
+
+    <!-- Modular JavaScript Architecture -->
+    <script src="assets/js/core/config.js?v=1760886500"></script>
+    <script src="assets/js/core/data-loader.js?v=1760886500"></script>
+    <script src="assets/js/core/theme-system.js?v=1760886500"></script>
+    <script src="assets/js/utils/helpers.js?v=1760886500"></script>
+    <script src="assets/js/utils/animations.js?v=1760886500"></script>
+    <script src="assets/js/utils/image-preloader.js?v=1760886500"></script>
+    <script src="assets/js/components/navigation.js?v=1760886500"></script>
+    <script src="assets/js/components/mobile-menu.js?v=1760886500"></script>
+    <script src="assets/js/components/logo-animation.js?v=1760886500"></script>
+    <script src="assets/js/components/carousel-base.js?v=1760886500"></script>
+    <script src="assets/js/components/carousel-about.js?v=1760886500"></script>
+    <script src="assets/js/components/carousel-project.js?v=1760886500"></script>
+    <script src="assets/js/components/carousel-featured.js?v=1760886500"></script>
+    <script src="assets/js/content/project-renderer.js?v=1760886500"></script>
+    <script src="assets/js/content/carousel-renderer.js?v=1760886500"></script>
+    <script src="assets/js/content/brand-renderer.js?v=1760886500"></script>
+    <script src="assets/js/content/resume-renderer.js?v=1760886500"></script>
+    <script src="assets/js/content/case-study-renderer.js?v=1760886500"></script>
+    <script src="assets/js/main.js?v=1760886500"></script>
+</body>
+</html>

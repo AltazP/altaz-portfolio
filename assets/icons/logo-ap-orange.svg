@@ -1,0 +1,11 @@
+<svg width="120" height="90" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+  <g font-family="Montserrat, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+     font-weight="700"
+     font-size="80"
+     fill="#EA580C">
+    <!-- A -->
+    <text x="10" y="75">A</text>
+    <!-- P (moved closer to overlap) -->
+    <text x="55" y="75">P</text>
+  </g>
+</svg>
