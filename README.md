@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website showcasing software engineering projects and experience.
 
+Currently deployed at https://altazp.github.io/altaz-portfolio/
+
 ## Features
 
 - **Responsive Design**: Optimized for all device sizes
