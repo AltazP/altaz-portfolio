@@ -348,7 +348,7 @@ body:not([data-theme="dark"]) [data-card="style-guide-sample"] .project-bg-image
 
 [data-card="about-creative"] .project-bg-image {
     background-image: url('../images/about3.jpg');
-    background-position: center 55%;
+    background-position: center 45%;
 }
 
 [data-card="about-personal"] .project-bg-image {
