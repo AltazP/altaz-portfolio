@@ -4,12 +4,13 @@
       "company": "Fidelity Canada",
       "location": "Toronto, ON",
       "title": "Investly Software Developer",
-      "dates": "Scheduled:  01/2026 - 04/2026",
+      "dates": "01/2026 - 04/2026",
       "startDate": "2025-01",
       "endDate": null,
       "description": [
-        "Will contribute to Investly app development across mobile, frontend, and backend",
-        "Will support data pipeline development, automated testing, and software design"
+        "Engineered backend APIs and integrated Admin Portal workflow to aggregate verification data into a user behaviour/risk score with contributing factors, reducing manual account investigation time by ~95%",
+        "Developed REST APIs and Admin Portal tooling to enable CX-led chat message redaction, replacing manual developer escalation workflows and reducing data removal time from ~5 minutes to <5 seconds.",
+        "Fully refactored Admin Portal front-end architecture by migrating from a deprecated React state-management tool, to Redux Toolkit, reducing state-related bugs and improving scalability"
       ],
       "featured": true
     },
