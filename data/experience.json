@@ -10,6 +10,9 @@
       "description": [
         "Engineered backend APIs and integrated Admin Portal workflow to aggregate verification data into a user behaviour/risk score with contributing factors, reducing manual account investigation time by ~95%",
         "Developed REST APIs and Admin Portal tooling to enable CX-led chat message redaction, replacing manual developer escalation workflows and reducing data removal time from ~5 minutes to <5 seconds.",
+        "Built backend APIs and implemented React Native mobile features for account performance, enabling users to view MWRR-based returns, historical account values, and net deposits across time periods",
+        "Implemented backend services and mobile onboarding flows for a cashback rewards promotion, including user eligibility evaluation, opt-in tracking, cashback calculation logic, and in-app promotional banners",
+        "Automated conflict-resolution workflow for user questionnaires by detecting inconsistent form answers and auto-generating response templates, eliminating manual lookup and reducing CX response time by ~90%",
         "Fully refactored Admin Portal front-end architecture by migrating from a deprecated React state-management tool, to Redux Toolkit, reducing state-related bugs and improving scalability"
       ],
       "featured": true
