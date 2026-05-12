@@ -380,7 +380,7 @@ class ParticleSystem {
                     // Use power curve to make it slow at low values, faster at high values
                     // At 110: (110-90)/210 = 0.095 -> 0.095^0.75 = 0.146 (14.6% of max speed)
                     const orbitStrength = Math.pow(strengthPosition, 0.75);
-                    const orbitalSpeed = 0.3 * orbitStrength; // Max 0.3 at strength 300
+                    const orbitalSpeed = 0.12 * orbitStrength;
 
                     // Tangential velocity (perpendicular to radial direction)
                     particle.vx += -Math.sin(angle) * orbitalSpeed;
